@@ -308,7 +308,7 @@ static void proto_reg_handoff_minecraft(void)
 {
 
     dissector_handle_t handle_minecraft = create_dissector_handle(dissect_minecraft, proto_minecraft);
-    dissector_add_uint("tcp.port", 25565, handle_minecraft);
+    dissector_add_uint("tcp.port", 6016, handle_minecraft);
 }
 
 void plugin_register(void)
